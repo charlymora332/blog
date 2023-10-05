@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Mi Blog</title>
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous" ></script>
+
+</head>
+<body>
+  <script src="hoja.js" defer></script>
+  <header>
+        <div id="miweb">
+  
+         <h1 class="logo">
+           <a href="/segunda clase/index.html" class="titulo fuente-acento">MI WEB</a>
+         </h1>
+  
+        </div>
+     
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      
+      <nav class="navbar">
+          <div id="ba">
+              <ul class="menu">
+                  <li class="menud"> <div  class="mna"><a href="perfil.html" class="navli mnae">acerca de mi</a></div></li>
+                  <li class="menud"> <div  class="mna"><a href="perfil.html"  class="mnae">trabajos</a></div></li>
+                  <li class="menud"> <div  class="mna"><a href="proyecto.html"  class="mnae">servicios</a></div></li>
+                  <li class="menud"> <div  class="mna"><a href="cv.html"  class="mnae">contacto</a></div></li>
+                  <li class="menud"> <div  class="mna"><a href="perfil.html"  class="mnae">trabajos</a></div></li>
+              </ul>
+       </div>
+      </nav>
+  </header>
+
+<div id="full">
+  <div class="toda">
+     <div id="imge">
+        <img src="/imagenes/mi imagen.jpg" id="ih" alt="hongo">
+      </div>
+
+   <div id="who">
+       <h1>WHO</h1>
+       <p>
+          soy Carlos de colombia, apasionado de la tecnología y la programación. 
+          Me apasiona la programación. Actualmente, estoy estudiando Ingeniería en Sistemas y también realizo un tecnólogo en análisis y desarrollo de software. La tecnología es algo que me fascina, y me encanta estar al tanto de las últimas tendencias. Además, soy un apasionado del baloncesto, y dedico tiempo a entrenar y jugar regularmente. A mis 17 años, estoy emocionado por las oportunidades que el futuro me depara y estoy ansioso por seguir aprendiendo y creciendo.
+       </p>
+   </div>
+
+   <div id="imgee">
+      <img src="/imagenes/mi imagen.jpg" id="ih" alt="hongo">
+   </div> 
+ </div>
+
+
+ <div class="libros">
+
+    <div class="libros 2">
+        <div class="librosbd">
+                    <h1>Libros</h1>
+                </div>
+        <div class="libro">
+
+            <div class="plibro">
+               <h2>Mamba Mentality</h2>
+               <div>
+                <img src="/imagenes/kobe.jpg" alt="kobe">
+                 <p>
+                  "Mamba Mentality" es la filosofía de vida adoptada por el legendario jugador de baloncesto Kobe Bryant. Se caracteriza por una determinación feroz, una ética de trabajo incansable y una voluntad inquebrantable de alcanzar la grandeza en cada aspecto de la vida.
+                 </p>
+               </div>
+            </div>
+
+            <div class="plibro">
+                <h2>Las 48 Leyes Del Poder</h2>
+                  <div>
+                  <img src="/imagenes/48 leyes.png" alt="libro 48 leyes del poder">
+                  <p>
+                   Este libro explora estrategias y tácticas utilizadas a lo largo de la historia por figuras influyentes para obtener y mantener el poder. Cada ley se presenta como un principio o estrategia específica, respaldada por ejemplos históricos y anécdotas.
+                  </p>
+              </div>
+            </div>
+          
+            <div class="plibro">
+                <h2>Psicologia oscura</h2>
+                <div>
+                  <img src="/imagenes/oscura.png" alt="libro 48 leyes del poder">
+                  <p>
+                   No hay un libro específico llamado "Psicología Oscura" que pueda abordar sin más detalles. Si tienes información adicional o un fragmento específico en mente, por favor proporciónalo para obtener ayuda más precisa.                 </p>
+                </div>
+            </div>
+
+            <div class="plibro">
+                <h2>Cartilla nacho</h2>
+                <div>
+                   <img src="/imagenes/nacho.jpg" alt="Cartilla Nacho">
+                   <p>
+                     a "Cartilla de Nacho" es un libro educativo utilizado en algunos países de América Latina, especialmente en Venezuela, para enseñar a los niños a leer y escribir. También conocido como "Libro Nacho", este material proporciona lecciones graduales y ejercicios diseñados para desarrollar habilidades básicas de lectura y escritura en los estudiantes de primaria.                 </p>
+                   </p>
+                </div>
+            </div>
+
+      </div>
+</div>  
+ </div>
+
+  <div class="btnprin">
+     <button onclick="mostrarFormulario()" class="btn-o-c">Agregar un libro</button>
+  </div>
+
+   <footer class="form-header" id="formw">
+      <div class="divformu">
+          <div>
+            <h1>sugerencias</h1>
+            <p><em>¡añade tu libro!</em></p>  
+          </div>
+
+  <form action="" method="get" class="formulario" id="form">
+    <div class="form-row">
+      <label for="nombre">Nombre del libro</label>
+      <input id="nombre" name="nombre" type="text" />
+    </div>
+
+      <div class="form-row">
+        <label for="nombre">Autor del libro</label>
+        <input id="nombre" name="nombre" type="text" required/>
+      </div>
+  
+      <div id="imagensubir">
+      <label for="imagen">Selecciona una imagen:</label>
+      <br>
+      <input type="file" id="imagen" name="imagen" accept="image/*" required onchange="mostrarVistaPrevia()">
+      <br>
+      <br>
+      <!-- Vista previa de la imagen -->
+      <!-- <img id="vistaPrevia" src="#" alt="Vista Previa">*/  -->
+    </div>
+
+    <div class="form-row">
+      <label for="mensaje">Resumen</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+    </div>
+
+   <div class="form-row">
+      <label for="email">Email</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="pepe@gmail.com"
+        required
+      />
+    </div>
+    <div class="form-row">
+      <button class="btn-o-c">Enviar</button>
+      <button onclick="ocultarFormulario()" class="btn-o-c">Cancelar</button>
+    </div> 
+    <P class="alertas" id="alertas"></P>
+<!-- Agrega un botón para cerrar el formulario -->
+  </form>
+  </div>
+
+<!-- /* temina formulario */ -->
+
+</div>
+  <div class="contacto">
+     <ul id="lc">
+       <li> <div class="infcd">  <p class="infc">Redes Sociales </p>  </div> </li>
+       <li> <div class="infcd">   <p class="infc">311443300</p></div> </li> 
+       <li> <div class="infcd"> <a class="infc" href="https://wa.me/+573102673252">whatsApp</a></div></li  > 
+       <li> <div class="infcd">   <a class="infc" href="https://www.instagram.com/herrera.exxe/"> Instagram</a></div></li>   
+     </ul>
+   </div>
+</div>
+
+<script src="scrip.js" defer></script>
+
+</body>
+</html>
